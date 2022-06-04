@@ -4,12 +4,12 @@ import { getFirestore } from 'firebase/firestore';
 
 // Initialize Firebase.
 const firebaseConfig = {
-  apiKey: 'AIzaSyDcrGMBbTzb2YouhAvovMKahVYktyLO6LY',
-  authDomain: 'tcl-43-smart-shopping-list.firebaseapp.com',
-  projectId: 'tcl-43-smart-shopping-list',
-  storageBucket: 'tcl-43-smart-shopping-list.appspot.com',
-  messagingSenderId: '353075517348',
-  appId: '1:353075517348:web:f0c2953277ad5543261331',
+  apiKey: 'AIzaSyDhjr36myF72PrCZAvBq7GYp61FoM9vEeA',
+  authDomain: 'my-smart-shopping-list-61a15.firebaseapp.com',
+  projectId: 'my-smart-shopping-list-61a15',
+  storageBucket: 'my-smart-shopping-list-61a15.appspot.com',
+  messagingSenderId: '463693271504',
+  appId: '1:463693271504:web:c6e0be76ffbcf9bc9f29d5',
 };
 
 export const app = initializeApp(firebaseConfig);
