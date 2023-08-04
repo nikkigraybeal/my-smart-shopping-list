@@ -1,5 +1,7 @@
 # Overview
 
+visit the site: https://my-smart-shopping-list-61a15.web.app/
+
 ## What is this project?
 
 The goal of this project is to create a “smart” shopping list app that learns user's buying habits and helps them remember what they’re likely to need to buy on their next trip to the store.
