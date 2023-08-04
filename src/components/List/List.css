@@ -1,22 +1,19 @@
 .list-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  margin-top: 3.8em;
+  border-radius: 12px;
+  text-align: center;
+  background: var(--secondary);
+  border: 3px solid var(--accent);
+  padding: 0.8em;
+  height: auto;
+  margin-bottom: 100px;
 }
 
 .reset-button {
-  margin: 10px auto;
-  width: 150px;
+  margin: 10px 5px;
+  width: 100px;
   font-size: 0.5em;
-}
-
-.search-input {
-  margin: 0 5px 0 5px;
-  border-radius: 3em;
-  height: 45px;
-  padding-left: 5px;
 }
 
 .search-style {

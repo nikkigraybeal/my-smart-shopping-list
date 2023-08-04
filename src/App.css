@@ -6,39 +6,41 @@
 }
 
 .App {
-  flex-grow: 1;
-  border-radius: 12px;
-  text-align: center;
-  margin: 3%;
-  background: white;
-  border: 3px solid black;
-  padding-bottom: 0.8em;
-  margin-bottom: 4em;
+  height: 100%;
+  width: 100%;
 }
 
 button {
-  border: #20a39e solid 3px;
-  border-radius: 3em;
-  color: #111010;
-  background-color: #ffba49;
+  border: var(--tertiary) solid 3px;
+  border-radius: 0.2em;
+  color: var(--primary);
+  background-color: var(--tertiary);
   padding: 8px;
   font-weight: bold;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #ef5b5b;
+  background-color: var(--accent);
 }
 
 input {
   border-style: solid;
 }
 
+.search-input {
+  border-radius: 0.2em;
+  border: 1px solid var(--accent);
+  height: 45px;
+  padding-left: 5px;
+  max-width: 225px;
+  background: white;
+}
+
 h1 {
   font-family: 'Bangers', cursive;
   font-size: 2em;
-  margin-top: -1.8em;
-  color: #20a39e;
+  color: var(--tertiary);
 }
 
 @media only screen and (max-width: 320px) {

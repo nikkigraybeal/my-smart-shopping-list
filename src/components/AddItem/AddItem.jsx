@@ -65,8 +65,8 @@ export default function AddItem() {
   return (
     <>
       <div className="item-container">
-        <h1>Add Item</h1>
-        <form onSubmit={submitHandler}>
+        <h1 className="add-title">Add Item</h1>
+        <form className="form" onSubmit={submitHandler}>
           {/* <label htmlFor="item-name">Item name:</label> */}
           <input
             placeholder=" Enter item name..."

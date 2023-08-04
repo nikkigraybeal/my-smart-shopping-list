@@ -8,16 +8,9 @@
 
 #delete-button {
   border-radius: 5px;
-  background-color: #e15d5d;
+  background-color: var(--tertiary);
   height: 25px;
   width: 25px;
-}
-
-.search-input {
-  margin: 0 5px 0 5px;
-  border-radius: 3em;
-  height: 45px;
-  padding-left: 5px;
 }
 
 li {
@@ -44,7 +37,7 @@ li {
 
 /*style checkbox on mouseover*/
 .soon:hover .checkbox ~ .checkmark {
-  background-color: #6aaaa7;
+  background-color: var(--accent);
 }
 
 .kinda-soon {
@@ -62,7 +55,7 @@ li {
 
 /*style checkbox on mouseover*/
 .kinda-soon:hover .checkbox ~ .checkmark {
-  background-color: #fbcc80;
+  background-color: var(--accent);
 }
 
 .not-soon {
@@ -80,7 +73,7 @@ li {
 
 /*style checkbox on mouseover*/
 .not-soon:hover .checkbox ~ .checkmark {
-  background-color: #e68383;
+  background-color: var(--accent);
 }
 
 .inactive {
@@ -112,7 +105,7 @@ li {
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #20a39e;
+  background-color: var(--tertiary);
 }
 
 .kinda-soon .checkmark {
@@ -121,7 +114,7 @@ li {
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #ffba49;
+  background-color: var(--primary);
 }
 
 .not-soon .checkmark {
@@ -130,7 +123,7 @@ li {
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #ef5b5b;
+  background-color: var(--secondary);
 }
 
 .inactive .checkmark {
@@ -139,12 +132,12 @@ li {
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #a4a9ad;
+  background-color: var(--accent);
 }
 
 /*add grey background when checked*/
 .checkbox:checked ~ .checkmark {
-  background-color: #a4a9ad;
+  background-color: var(--accent);
 }
 
 .checkmark:after {
@@ -163,7 +156,7 @@ li {
   top: 5px;
   width: 5px;
   height: 10px;
-  border: solid white;
+  border: solid var(--accent);
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);

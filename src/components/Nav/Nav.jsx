@@ -8,7 +8,7 @@ export default function Nav() {
       <NavLink
         to="/list"
         style={({ isActive }) =>
-          isActive ? { color: '#20A39E' } : { color: '#A4A9AD' }
+          isActive ? { color: '#202C39' } : { color: '#A4A9AD' }
         }
       >
         Shopping List
@@ -17,7 +17,7 @@ export default function Nav() {
       <NavLink
         to="/addItem"
         style={({ isActive }) =>
-          isActive ? { color: '#20A39E' } : { color: '#A4A9AD' }
+          isActive ? { color: '#202C39' } : { color: '#A4A9AD' }
         }
       >
         Add Item

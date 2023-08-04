@@ -16,6 +16,6 @@ nav {
   left: 0;
   width: 100%;
   padding: 8px;
-  background-color: #23001e;
+  background-color: var(--tertiary);
   height: 2.6em;
 }

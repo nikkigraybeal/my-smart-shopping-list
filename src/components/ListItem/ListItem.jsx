@@ -77,7 +77,6 @@ export default function ListItem({ item, index }) {
           <span className="checkmark"></span>
         </label>
         {item.data().item}
-        {/* <button onClick={() => deleteHandler(item)}>delete</button> */}
         <button id="delete-button" onClick={() => deleteHandler(item)}>
           <img className="delete-image" src={'./img/x.png'} alt="delete" />
         </button>

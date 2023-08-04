@@ -46,59 +46,61 @@ export default function List() {
   }, [userToken]);
 
   return (
-    <div className="list-container">
-      <h1>Shopping List</h1>
-      <div>
-        <img
-          className="grocery-image"
-          src={'./img/groceries@180.png'}
-          width="40%"
-          alt="groceries"
-        />
-      </div>
-      {docs.length > 0 ? (
+    <>
+      <div className="list-container">
+        <h1 className="list-title">Shopping List</h1>
         <div>
-          <input
-            className="search-input search-style"
-            type="text"
-            placeholder="Search..."
-            value={searchInputValue}
-            onChange={(e) => {
-              setSearchInputValue(e.target.value);
-            }}
+          <img
+            className="grocery-image"
+            src={'./img/groceries@180.png'}
+            width="40%"
+            alt="groceries"
           />
-          <button
-            className="reset-button"
-            onClick={() => setSearchInputValue(() => '')}
-          >
-            Clear Search
-          </button>
-          <ul>
-            {docs
-              .filter((item) => {
-                return item
-                  .data()
-                  .item.toLowerCase()
-                  .includes(searchInputValue.toLowerCase());
-              })
-              .map((item, index) => {
-                return <ListItem item={item} index={index} />;
-              })}
-          </ul>
         </div>
-      ) : (
-        <div>
-          <p>Your shopping list is currently empty</p>
-          <button
-            onClick={() => {
-              navigate('/addItem');
-            }}
-          >
-            Add Item
-          </button>
-        </div>
-      )}
+        {docs.length > 0 ? (
+          <div>
+            <input
+              className="search-input search-style"
+              type="text"
+              placeholder="Search..."
+              value={searchInputValue}
+              onChange={(e) => {
+                setSearchInputValue(e.target.value);
+              }}
+            />
+            <button
+              className="reset-button"
+              onClick={() => setSearchInputValue(() => '')}
+            >
+              Clear Search
+            </button>
+            <ul>
+              {docs
+                .filter((item) => {
+                  return item
+                    .data()
+                    .item.toLowerCase()
+                    .includes(searchInputValue.toLowerCase());
+                })
+                .map((item, index) => {
+                  return <ListItem item={item} index={index} />;
+                })}
+            </ul>
+          </div>
+        ) : (
+          <div>
+            <p>Your shopping list is currently empty</p>
+            <button
+              onClick={() => {
+                navigate('/addItem');
+              }}
+            >
+              Add Item
+            </button>
+          </div>
+        )}
+      </div>
       <Nav />
-    </div>
+    </>
   );
 }

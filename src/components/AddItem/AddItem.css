@@ -1,17 +1,22 @@
 .item-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  margin-top: 3.8em;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--secondary);
+  border: 3px solid var(--accent);
+  padding-bottom: 0.3em;
+  margin-bottom: 100px;
 }
 
-.search-input {
-  margin: 0 5px 0 5px;
-  border-radius: 3em;
-  height: 45px;
-  padding-left: 5px;
-  max-width: 225px;
+.add-title {
+  flex: 0 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .frequency {
@@ -23,11 +28,11 @@
 
 .add-item-p-tag {
   font-size: 20px;
-  color: #23001e;
+  color: var(--primary);
 }
 
 p {
-  color: red;
+  color: var(--accent);
   font-size: 0.75em;
   padding: 0 1em 0 1em;
 }
